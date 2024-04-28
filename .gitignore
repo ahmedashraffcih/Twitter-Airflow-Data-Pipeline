@@ -1,2 +1,2 @@
 airflow-ec2-key.pem
-credentials.py
+infra/credentials.py

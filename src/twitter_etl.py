@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import s3fs
 from datetime import datetime
-from credentials import *
+from infra.credentials import *
 
 
 def run_twitter_etl():

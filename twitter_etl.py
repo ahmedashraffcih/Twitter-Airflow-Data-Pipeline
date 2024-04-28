@@ -3,14 +3,15 @@ import pandas as pd
 import json
 import s3fs
 from datetime import datetime
+from credentials import *
 
 
 def run_twitter_etl():
 
-    access_key = "mxvDJ1Jh52s8kUEMmqGp3tqEr"
-    access_secret = "dEN6UBRh1lVPFX1McZGbRRSGzr5IBX1TdfZcSSOFScevUldH4z"
-    consumer_key = "844733190422102017-ejBT4OVfc6b3kjMV4hu4eATxE93FaZ5"
-    consumer_secret = "jFVaBvM05ov68BFHCUqzhoSNFbOEk52CiWmvJxX7pkK1f"
+    access_key = ACCESS_KEY
+    access_secret = ACCESS_SECRET
+    consumer_key = CONSUMER_KEY
+    consumer_secret = CONSUMER_SECRET
 
     # Twitter Authentication
     auth = tweepy.OAuthHandler(access_key, access_secret)
